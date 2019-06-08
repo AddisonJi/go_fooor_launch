@@ -1,0 +1,14 @@
+/* remove default margin and padding from body */
+/* body{
+  padding: 30px;
+  margin: 20px;
+}  */
+
+/* set map, body, and html to 100% of the screen size */
+#map{
+  position: absolute;
+  top: 275px;
+  left:257px;
+  width: 65%;
+  height: 70%;
+}

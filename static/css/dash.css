@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: Jura, sans-serif;
+  }
+  
+html, body{
+    height: 100%;
+  }
+  body { 
+              background-image: url("../images/bg.jpg") ;
+              background-position: center center;
+              background-repeat:  no-repeat;
+              background-attachment: fixed;
+              background-size:  cover;
+              background-color: #999;
+    
+  }
+  
+  div, body{
+    margin: 0;
+    padding: 0;
+    /* font-family: exo, sans-serif; */
+    
+  }
+  .wrapper {
+    height: 100%; 
+    width: 100%; 
+  }
+  
+  .message {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%; 
+    height:45%;
+    bottom: 0; 
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 0.5em;
+  }
+
+  h1 {
+    margin-top: 25px;
+    font-size: 4rem;
+    animation: title 1.2s forwards linear;
+    color:white;
+    text-align: center;
+  }
+  
+  p{
+    margin-top: 5px;
+    font-size: 2rem;
+    animation: title 1.2s forwards linear;
+    color:white;
+    text-align: center;
+  }
+
+  .panel-default{
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 700px;
+    background-color: rgb(217, 218, 226);
+  }
+
+
+  .panel-title{
+    margin-top: 10px
+  }
+
+  .panel-title{
+    font-size: 2rem;
+  }
+
+  #abutton{
+    margin: 0 auto;
+  }
+
+  #plot{
+    position: absolute;
+    top: 800px;
+    left:222px;
+  }
