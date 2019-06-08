@@ -7,8 +7,8 @@
 /* set map, body, and html to 100% of the screen size */
 #map{
   position: absolute;
-  top: 265px;
-  left:290px;
+  top: 275px;
+  left:275px;
   width: 70%;
   height: 70%;
 }
