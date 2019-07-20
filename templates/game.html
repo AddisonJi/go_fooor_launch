@@ -6,8 +6,8 @@
 canvas {
     border:1px solid #010711;
     background-color: #010120;
-    top: 15%;
-    left:30%;
+    top: 10%;
+    left:24%;
     margin:auto;
     position: absolute;
 }
@@ -32,7 +32,7 @@ var myMusic;
 
 function startGame() {
     myGamePiece = new component(50, 50, "/static/images/rocket.svg", 250, 350,"image");
-    myScore = new component("20px", "Consolas", "white", 370, 40, "text");
+    myScore = new component("20px", "Consolas", "white", 600, 60, "text");
     myMusic = new sound("/static/images/sound.mp3");
     myGameArea.start();
     myMusic.play();
@@ -42,8 +42,8 @@ function startGame() {
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
-        this.canvas.width = 500;
-        this.canvas.height = 400;
+        this.canvas.width = 800;
+        this.canvas.height = 600;
         this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
@@ -162,7 +162,7 @@ function updateGameArea() {
     myGameArea.frameNo += 1;
     if (myGameArea.frameNo == 1|| everyinterval(80)) {
         minx=0
-        maxx=500
+        maxx=800
         miny=0
         maxy=40
         mind=20
@@ -205,7 +205,7 @@ function everyinterval(n) {
 }
 
 </script>
-<div style="text-align:center;width:480px;margin-top: 45%;margin-left:30%">
+<div style="text-align:center;width:480px;margin-top: 46%;margin-left:34%">
     <button onclick=location.reload()>Restart</button>
 </div>
 </body>
