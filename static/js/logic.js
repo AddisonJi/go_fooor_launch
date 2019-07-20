@@ -6,7 +6,6 @@ submit.on("click", function() {
   console.log('it works')
 
   document.getElementById("map").innerHTML = ""
-  document.getElementById("plot").innerHTML = ""
 
   // my heat map:
   var myMap = L.map("map", {
