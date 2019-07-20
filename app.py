@@ -13,7 +13,6 @@ from flask import (
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def index():
     #"""Return the homepage."""
@@ -48,6 +47,20 @@ def names():
 def dashboard():
     if request.method == "GET":
         return render_template("data.html")
+    else:
+        return render_template("golaunch.html")
+
+@app.route("/funfact", methods=["GET", "POST"])
+def funfact():
+    if request.method == "GET":
+        return render_template("funfact.html")
+    else:
+        return render_template("golaunch.html")
+
+@app.route("/game", methods=["GET", "POST"])
+def game():
+    if request.method == "GET":
+        return render_template("game.html")
     else:
         return render_template("golaunch.html")
 

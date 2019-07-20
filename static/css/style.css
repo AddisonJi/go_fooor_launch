@@ -41,20 +41,46 @@ body {
 }
 
 .navbar {
-  padding: 5px;
+  padding: 0px;
   margin: 0;
-  background: #0B3D91
+  background: rgba(245, 245, 247, 0.973)
 }
 
-/* This CSS styles the ufo icon in the navbar */
+/* This CSS styles the logo icon in the navbar */
 .nav-ufo {
   position: absolute;
+  top:0px;
   bottom: 5px;
-  left: 150px;
-  width: 35px;
-  color: #0B3D91;
+  left: 20px;
+  width: 60px;
+  color: rgb(17, 17, 19);
+}
+.main-menu {
+	float: right;
+	margin-right: 170px;
 }
 
+.main-menu ul {
+	list-style: none;
+}
+
+.main-menu ul li {
+	display: inline;
+}
+
+.main-menu ul li a {
+	display: inline-block;
+	font-size: 20px;
+  color: rgb(19, 18, 18);
+  margin-top:  10px;
+	margin-left: 35px;
+	font-weight: 500;
+	padding: 5px 5px;
+}
+
+.main-menu ul li a:hover {
+	color: #ffb320;
+}
 /* Adding styles to the aside and filter form */
 .ufo-form {
   margin-top: 50px;
